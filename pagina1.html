@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Línea de Tiempo de Nuestra Pareja</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+    <script src="scripts/main.js" defer></script> <!-- Incluye el script aquí -->
+</head>
+<body>
+    <div class="timeline">
+        <h2>Nuestra Historia</h2>
+        <div class="event" onclick="openModal('foto/0a0c6ade-fa66-49cd-85c5-584a70f21096.jpg')">
+            <img src="foto/0a0c6ade-fa66-49cd-85c5-584a70f21096.jpg" alt="Foto 1">
+            <span class="description">2018 - Nuestro primer encuentro</span>
+        </div>
+        <div class="event" onclick="openModal('foto/IMG-20231025-WA0042.jpg')">
+            <img src="foto/IMG-20231025-WA0042.jpg" alt="Foto 2">
+            <span class="description">2019 - Nuestro primer viaje juntos</span>
+        </div>
+        <div class="event" onclick="openModal('foto/IMG-20240120-WA0033.jpg')">
+            <img src="foto/IMG-20240120-WA0033.jpg" alt="Foto 3">
+            <span class="description">2020 - Nuestra promoción</span>
+        </div>
+        <div class="event" onclick="openModal('foto/IMG-20231207-WA0226.jpg')">
+            <img src="foto/IMG-20231207-WA0226.jpg" alt="Foto 4">
+            <span class="description">2021 - Nuestra aventura</span>
+        </div>
+        <div class="event" onclick="openModal('foto/IMG-20230725-WA0041.jpg')">
+            <img src="foto/IMG-20230725-WA0041.jpg" alt="Foto 5">
+            <span class="description">2022 - Nuestro baile</span>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage" alt="Imagen ampliada">
+        <div id="caption"></div>
+    </div>
+</body>
+</html>
